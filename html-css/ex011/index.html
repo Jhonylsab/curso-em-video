@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/coracao.ico" type="image/x-icon">
+    <title>Trabalhando com midias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em diversos dispositivos ou diminua e aumente a aba do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto_nossa_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto_nossa_M.png" type="image/png">
+        <img src="imagens/foto_nossa_G.png" alt="A imagem flexível funciona">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Reproduzindo audio em HTML5</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midias/Fazendo nota - Theusma (online-audio-converter.com).mp3" type="audio/mpeg">
+        <source src="midias/Fazendo nota - Theusma.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
